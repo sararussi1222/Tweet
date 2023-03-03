@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-items: center;  
+  background-image: url('./assets/cielo-estrellado.jpg');
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-tweet {
+  width: 25rem;
+  height: 35rem;
+  border-radius: 15px;
+  background-color: #c99bfd;  
+  border: groove 5px #760598;
+  box-shadow: 0 0 10px #ac0606;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(252, 252, 252);
+    font-size: 5rem;
+    text-shadow: 0 0 10px #86f5ef;
+    animation: colors 1s infinite;
+    -webkit-animation: colors s infinite;
+  }
+  
+  @keyframes colors {
+    25% {text-shadow: 0 0 20px #21eb0b};
+    50%{text-shadow: 0 0 20px #dceb0b} ;
+    75% {text-shadow: 0 0 20px #eb0bbe};
+  }
+
+.item-tweet {
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  list-style: none;
+  width: 20rem;
+  height: auto;
+  border: groove 5px #ccddeb;
+  border-radius: 15px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #004c98;
+  word-break: break-all;
+}
+
+.minor {
+  color: #ff0000;
+  font-size: 5rem;
+}
+
+.max {
+  color: #008000;
+  font-size: 5rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 12rem;
+  margin: 1rem;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-clear {
+  width: 12rem;
+  height: 2.5rem;
+  background-color: #88ff00;
+  color: #eaebf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-clear:hover {
+  color: violet;
+  background-color: #ff0000;
+  box-shadow: 0 0 5px violet;
+  font-weight: 800;
+}
+
+.counter {
+  color: #1dd91d;
+  font-size: 1rem;
+}
+
+.counter-min {
+  color: #de0808;
+  font-weight: 900;
+  padding: 1rem;
+  align-self: flex-end;  
+}
+
+span {
+  width: 90%;
+  height: 4rem;  
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;  
+  flex-wrap: wrap;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 800;  
+  word-break: break-all;
+}
+
+
